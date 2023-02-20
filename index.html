@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLDEN GATES 2023</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <style>
+        *{padding: 0;margin: 0;}
+        body{
+          background-image: url('images/menu.avif');
+          background-repeat: no-repeat;user-select: none;
+          background-position: center center;
+          background-attachment: fixed;background-size: cover;
+        cursor: url('/images/mous3.png'),auto;
+      color: white;}
+        .header {
+          text-align: center;font-family: 'Poppins', sans-serif;
+          padding: 50px;margin-top:15%;color:black;
+        }
+        .adbut{padding:20px;border: 1px solid white ;
+        background-color: rgb(255, 255, 255,0.3);}
+        .header h1 {
+          font-size: 50px;letter-spacing: 2px;
+
+        }    
+        .header p {
+          font-size: 20px;margin:5% auto;font-weight: bold;
+        }
+        .btn-juicy {
+        box-shadow: 5px 10px #203747;
+        transition: 0.2s;
+}
+.btn-juicy:hover:active {
+	transition: 0.1s;
+	box-shadow: 1px 2px #2f5570;
+	transform: translate(5px, 
+  10px);
+}
+.btn-juicy:hover {
+	box-shadow: 6px 12px #1e272e;	transform: translate(-1px, -2px);
+}
+.btn {
+	border-radius: 20px;letter-spacing: 2px;
+  font-family: inherit;
+  border-color: aliceblue;
+	background-color: #223949;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding: 20px;
+	margin: 10px;
+	user-select: none;
+	-webkit-user-drag: none;
+  font-size: 17px;
+}
+body { 
+   opacity: 0;
+   transition: opacity .5s;
+}
+
+.adbut{
+  background-color: rgb(255, 255, 255,0);
+  color: black;
+  border: none;
+}
+.modal{
+    width:500px;height:200px;
+    background-color: white;
+    position:absolute;top:200px;left:280px;z-index: 1;display:none;
+    border-radius: 20px;
+}
+.modal .close{
+    color:red;font-size: 3rem;font-weight: bold;
+    float:right;padding:3px 15px;
+}
+.modal p{margin:60px 70px 10px;font-size: 1.2rem; color: black;}
+.modal input{margin:5px 60px;padding:10px 20px; border-radius: 10px;}
+.modal .button{padding:10px 20px;margin:30px auto;color:wheat;
+  background-color:black;border:none;border-radius: 5px;}
+.modal .button:hover{
+  transition: 0.5s;
+    background-color:rgba(121, 123, 124, 0.349) ;
+    box-shadow: 0px 0px 10px rgb(56, 89, 233);}
+      </style>
+
+</head>
+<body>
+      <button onclick="document.getElementById('modal').style.display='block';" class="adbut">Admin</button>
+      <div class="modal" id="modal">
+        <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+          <p>Enter password:</p>
+          <input type="password" name="pass" id="pass">
+          <button class="button" onclick=" adcheck()">Submit</button>
+      </div>
+        <div class="header">
+          <h1>GOLDEN GATES 2023</h1>
+          <p>The Inter-College Quiz Competition</p>
+          <button class="btn btn-juicy" onclick="transitionToPage('menu.html')"><b>Enter</b></button>
+        </div>
+
+      <script>
+      window.transitionToPage = function(h) {
+        let b=document.querySelector('body');
+        b.style.opacity = 0
+        setTimeout(function() { 
+            window.location.href = h;
+            b.style.opacity=1
+        }, 500)
+    }
+    
+    document.addEventListener('DOMContentLoaded', function(event) {
+        document.querySelector('body').style.opacity = 1
+    })
+    
+    function adcheck(){
+      a=pass.value;
+      if (a=='ssasc54321'){
+        window.location.href='./admin.php'
+      }
+      else if(a!=null){
+        alert('Wrong Passcode')
+      }
+      pass.value="";
+      modal.style.display='none';
+    }
+      </script>
+</body>
+</html>
+
