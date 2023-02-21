@@ -10,7 +10,7 @@
     <title>Finished</title>
     <style>
         body{
-            background-image: url('../images/framegold.jpg');
+            background-image: url('../images/thank.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;

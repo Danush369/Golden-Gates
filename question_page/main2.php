@@ -12,7 +12,7 @@ include("../dbconn/fdata2.php");
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/second.css">
+    <link rel="stylesheet" href="../style/index.css">
 </head>
 <body>
   <div class="container">
@@ -58,7 +58,7 @@ include("../dbconn/fdata2.php");
       echo "
       <div class='avatar-container'>
         <div class='avatar'>
-          <img src='../images/avatar.png' alt='Profile'>
+          <img src='../images/avatar.jpg' alt='Profile'>
         </div>
         <div class='name-box'><b>
           <p class='avatar-name' id='pname'>$name</p></b>"."
@@ -74,33 +74,27 @@ include("../dbconn/fdata2.php");
             $sn=1;
             foreach($fetchData as $data){
         ?>
-        
-        <div class='ques'></div>
-        
         <div class="question">
           <p id="question"><?php echo $data['question']; ?></p>
         </div>
-        
         <div class="options">
           <div class="option" id="option1" onclick="chooseOption(this)"><?php echo $data['op1'] ?></div>
           <div class="option" id="option2" onclick="chooseOption(this)"><?php echo $data['op2'] ?></div>
           <div class="option" id="option3" onclick="chooseOption(this)"><?php echo $data['op3'] ?></div>
           <div class="option" id="option4" onclick="chooseOption(this)"><?php echo $data['op4'] ?></div>
         </div>
-        
         <?php $sn++; }} else{ ?> 
         <?php echo $fetchData; ?>
         <?php } ?>
         <?php
         $conn->close();?>
-        
         <div id="btn-container">
            <div class="buttons">
              <button class="button" id="previous" onclick="previousQuestion(-1);">Previous</button>
              <button class="button" id="next" onclick="nextQuestion(+1);">Next</button>
            </div>
+        </div>
         
-          </div>
     </div>
   </div>
   <div class="modal" id="modal">
@@ -112,11 +106,11 @@ include("../dbconn/fdata2.php");
      </div>
      
   </div>
-  <div id='rnd_name'>Ode On Codes</div>
+  <div id='rnd_name'>Quiz Wiz</div>
   <div id="timer"></div>
   <button class="submit" id="submit" onclick="showModal()">Submit</button>
-  <script src="../script/index.js"></script>
-  <script src="../script/check2.js"></script>
   <script src="../script/timer.js"></script>
+  <script src="../script/index.js"></script>
+  <script src="../script/check1.js"></script>
 </body>
 </html>

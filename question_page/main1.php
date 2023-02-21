@@ -106,7 +106,7 @@ include("../dbconn/fdata1.php");
      </div>
      
   </div>
-  <div id='rnd_name'>Brain Stormers</div>
+  <div id='rnd_name'>Lingua Franca</div>
   <div id="timer"></div>
   <button class="submit" id="submit" onclick="showModal()">Submit</button>
   <script src="../script/timer.js"></script>

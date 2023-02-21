@@ -2,7 +2,7 @@
 $hostName = "localhost";
 $userName = "root";
 $password = "";
-$databaseName = "comfete";
+$databaseName = "golden_gates";
 $conn = new mysqli($hostName, $userName, $password, $databaseName);
 // Check connection
 if ($conn->connect_error) {
