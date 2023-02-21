@@ -1,0 +1,34 @@
+INSERT INTO `Round2` (`id`, `question`, `code`,`op1`, `op2`, `op3`, `op4`) VALUES
+('Ultra sonic waves are________','longitudinal  ','progressive  ','transverse  ','inverse'),
+('According to the newton's formula the velocity of sound in air is_______','280m/s  ','332m/s  ','331.6m/s  ','350m/s'),
+('Hooke's law essentially defines________','stress  ','strain  ','yield point  ','elastic limit'),
+('The poisson's ratio can not have the value________','0.7  ','0.2  ','0.49  ','0.1'),
+('Individual Ownership is called as  ?','Joint trade business	',' sole proprietorship	',' co-operative society   ',' '),partnership
+('Who takes no active part in Business  ?','CEO	',' managing director	© Dormant Partner	','minor partner'),
+(' Whose property is not liable for the debts of a company  ?','.Owner	',' shareholder		',' employee	',' minor partner'),
+('which word is the odd man out?',' Trivial	',' Unimportant		','Important		',' Insignificant'),
+(' Antonym for AID','Help 		',' Hinder		',' Assist			',' Residnet'),
+(' Window is to pane as book is to ________',' Novel	',' Glass			© Cover			',' Page'),
+(' Optimist is to cheerful as pessimist is to ________',' Gloomy	',' Mean		',' Petty			',' Helpful'),
+(' Select correct word:',' Guarrantee		',' Guarante		',' Gurantee		',' Guarantee'),
+('Which American computer company is called Big Blue?',' Tandy Svenson              ',' IBM    ',' Compaq Corpn              ',' Microsoft Corpn'),
+(' The digital computer was developed primarily in',' UK             ',' USA                  ',' USSR                     ',' Japan'),
+(' The first programming language was',' PASCAL       ',' FORTRAN       ( C),COBOL                     ','lisp'),
+(' The input unit of a computer',' Directs all other units            ',' Feeds data to the CPU or memory',' Retrieves data from CPU         ',' Al l of the above'),
+('UNIVAC is','Universal Automatic Computer       ','Universal Array Computer','Unique Automatic computer           ',' Unvalued  Automatic Computer '),
+('Liability of a Company Secretary is–',' Contractual only     ',' Statutory only    ',' Civil only     ',' Both '),contractual and statutory
+('The primary function of an office is–'    ,' Making, using and preserving records		',' Remunerating personnel',' Carrying out management policies 		',' Safeguarding organization’s assets'),
+('In an office, Franking machine is used for–',' Punching card 					',' Accounting work',' Duplicating 					',' Postal stamp fixing'),
+(' Fax is used for–',' Sending telephonic message 		 ',' Sending copies of documents',' Exercising control				 ',' Decision making'),
+(' Keyboard of a computer is–',' An input device 				',' An output device',' A processing device 			',' A storage device'),
+(' The polynomial x3+2x+3 has','.one negative and two real roots		','.three real roots ','.one positive and two imaginary roots		','.no solution '),
+(' If sin-1x-cot-1(1/2),=π/2,then x is equal to ','.1/2 	    ','.1/√5	    ','.2/√5     ','. √3/2'),
+(' Temporary finger like extensions on amoeba are called','  Cell membrane			 ','  Cell wall','   Pseudopodia			 ','     Cilia'),
+(' Blood consist of what fluid medium?','   Lymph			 ','   Plasma		 ','   All of these		 ','  Platelets'),
+('chemical name of washing soda is_________','sodium   carbonate 		  ','sodium chloride    ','sodium hydrogen carbonate	  ',' sodium hydroxide'),
+(' nucleotides have how many components?',' 2		',' 3		',' 5		',' 4'),
+(' How many districts of Tamil Nadu share the coastline?','10		','12		','13		',' 14'),
+('Tamil Nadu does not share its border with which of the following states?','AndhraPradesh	','Telangana	','Karnataka	',' Kerala');
+
+
+

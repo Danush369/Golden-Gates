@@ -107,7 +107,7 @@ include("../dbconn/fdata4.php");
      
   </div>
   <div id="timer"></div>
-  <div id='rnd_name'>Lexicographers</div>
+  <div id='rnd_name'>Connexion</div>
   <button class="submit" id="submit" onclick="showModal()">Submit</button>
   <script src="../script/timer.js"></script>
   <script src="../script/index.js"></script>
