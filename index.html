@@ -8,55 +8,68 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <style>
+          
+
         *{padding: 0;margin: 0;}
         body{
-          background-image: url('images/menu.avif');
+          background-image: url('images/bg.jpg');
           background-repeat: no-repeat;user-select: none;
           background-position: center center;
           background-attachment: fixed;background-size: cover;
         cursor: url('/images/mous3.png'),auto;
       color: white;}
-        .header {
+        
+      .header {
           text-align: center;font-family: 'Poppins', sans-serif;
-          padding: 50px;margin-top:15%;color:black;
+          /* letter-spacing: px; */
+          padding: 40px;margin-top:10%;color:fff;
+          text-shadow: 2px 2px hsl(29, 87%, 50%) ;
         }
+        
         .adbut{padding:20px;border: 1px solid white ;
         background-color: rgb(255, 255, 255,0.3);}
+        
         .header h1 {
-          font-size: 50px;letter-spacing: 2px;
+          font-size: 65px;letter-spacing: 5px;
 
         }    
         .header p {
-          font-size: 20px;margin:5% auto;font-weight: bold;
+          font-size: 20px;margin:5% auto;font-weight: bold;letter-spacing: 2px;
         }
         .btn-juicy {
-        box-shadow: 5px 10px #203747;
+        box-shadow: 5px 10px #f74636;
         transition: 0.2s;
 }
 .btn-juicy:hover:active {
 	transition: 0.1s;
-	box-shadow: 1px 2px #2f5570;
+	box-shadow: 1px 2px #f78419;
 	transform: translate(5px, 
   10px);
 }
+
 .btn-juicy:hover {
-	box-shadow: 6px 12px #1e272e;	transform: translate(-1px, -2px);
+	box-shadow: 6px 12px #f76254;	transform: translate(-1px, -2px);
 }
+
 .btn {
-	border-radius: 20px;letter-spacing: 2px;
-  font-family: inherit;
-  border-color: aliceblue;
-	background-color: #223949;
-	color: rgb(255, 255, 255);
-	text-decoration: none;
-	padding: 20px;
-	margin: 10px;
-	user-select: none;
-	-webkit-user-drag: none;
-  font-size: 17px;
+	border-radius: 20px;
+    letter-spacing: 2px;
+    font-family: inherit;
+    border-color: aliceblue;
+    background-color: #f74636;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    left: 45.5%;
+    user-select: none;
+    position: absolute;
+    bottom: 9%;
+    -webkit-user-drag: none;
+    font-size: 17px;
 }
+
 body { 
    opacity: 0;
    transition: opacity .5s;
@@ -64,12 +77,12 @@ body {
 
 .adbut{
   background-color: rgb(255, 255, 255,0);
-  color: black;
+  color: white;
   border: none;
 }
 .modal{
     width:500px;height:200px;
-    background-color: white;
+    background-color: #010409;
     position:absolute;top:200px;left:280px;z-index: 1;display:none;
     border-radius: 20px;
 }
@@ -77,28 +90,32 @@ body {
     color:red;font-size: 3rem;font-weight: bold;
     float:right;padding:3px 15px;
 }
-.modal p{margin:60px 70px 10px;font-size: 1.2rem; color: black;}
-.modal input{margin:5px 60px;padding:10px 20px; border-radius: 10px;}
+.modal p{margin:60px 70px 10px;font-size: 1.2rem; color: white;}
+.modal input{margin:5px 60px;padding:10px 20px; border-radius: 10px;background-color: #0d1117;border: 2px solid #238636;color: white;}
 .modal .button{padding:10px 20px;margin:30px auto;color:wheat;
-  background-color:black;border:none;border-radius: 5px;}
+  background-color:#238636;border:none;border-radius: 5px;}
 .modal .button:hover{
   transition: 0.5s;
     background-color:rgba(121, 123, 124, 0.349) ;
     box-shadow: 0px 0px 10px rgb(56, 89, 233);}
+    
       </style>
 
 </head>
 <body>
+ <!---- <video autoplay muted loop id="video">
+    <source src="images/videoplayback.mp4" type="video/mp4">
+  </video>-->
       <button onclick="document.getElementById('modal').style.display='block';" class="adbut">Admin</button>
       <div class="modal" id="modal">
         <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
           <p>Enter password:</p>
           <input type="password" name="pass" id="pass">
-          <button class="button" onclick=" adcheck()">Submit</button>
-      </div>
+          <button class="button" onclick="adcheck()">Submit</button>
+        </div>
         <div class="header">
-          <h1>GOLDEN GATES 2023</h1>
-          <p>The Inter-College Quiz Competition</p>
+          <h1>GOLDEN GATES</h1>
+          <p>National Talent Enrichment Symposium</p>
           <button class="btn btn-juicy" onclick="transitionToPage('menu.html')"><b>Enter</b></button>
         </div>
 
@@ -128,6 +145,9 @@ body {
       modal.style.display='none';
     }
       </script>
+
+
+
 </body>
 </html>
 

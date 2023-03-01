@@ -18,6 +18,15 @@ body{
   color: #fff;
 }
 
+.toup{
+  background-image: '../images/arowup.webp';
+  width: 20px;
+  height:20px;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
 .rwd-table tr {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -52,8 +61,7 @@ body{
   color: #000;
 }
 
-.rwd-table th,
-.rwd-table td {
+.rwd-table th, .rwd-table td {
   text-align: left;
 }
 
@@ -67,8 +75,7 @@ body{
   border-color: #bfbfbf;
 }
 
-.rwd-table th,
-.rwd-table td {
+.rwd-table th, .rwd-table td {
   padding: .5em 1em;
 }
 @media screen and (max-width: 601px) {
@@ -77,29 +84,32 @@ body{
   }
 }
 @media screen and (min-width: 600px) {
+
   .rwd-table tr:hover:not(:first-child) {
     background-color: #d8e7f3;
   }
+
   .rwd-table td:before {
     display: none;
   }
-  .rwd-table th,
-  .rwd-table td {
+
+  .rwd-table th, .rwd-table td {
     display: table-cell;
     padding: .25em .5em;
   }
-  .rwd-table th:first-child,
-  .rwd-table td:first-child {
+
+  .rwd-table th:first-child, .rwd-table td:first-child {
     padding-left: 0;
   }
-  .rwd-table th:last-child,
-  .rwd-table td:last-child {
+
+  .rwd-table th:last-child, .rwd-table td:last-child {
     padding-right: 0;
   }
-  .rwd-table th,
-  .rwd-table td {
+
+  .rwd-table th, .rwd-table td {
     padding: 1em !important;
   }
+  
 }
 
 
@@ -107,9 +117,9 @@ body{
 
 /* Basic Styling */
 body {
-background: #4B79A1;
-background: -webkit-linear-gradient(to left, #4B79A1 , #283E51);
-background: linear-gradient(to left, #4B79A1 , #283E51);        
+  background: #4B79A1;
+  background: -webkit-linear-gradient(to left, #4B79A1 , #283E51);
+  background: linear-gradient(to left, #4B79A1 , #283E51);        
 }
 h1 {
   text-align: center;

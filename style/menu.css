@@ -1,54 +1,91 @@
 body{
-    background-image:url('../images/menu.avif');
-  background-repeat: no-repeat;
-  background-attachment: fixed;user-select: none;
-  background-size: 150%;
-  background-position: center center;
+	background-image:url('../images/index_back.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;user-select: none;
+	background-size: 150%;
+	background-position: center center;
+	background-clip: url(../);
 }
+
 #navigate{
     width:100%;
-    display:flex;justify-content: space-around;flex-wrap: wrap;
-    position:fixed;bottom:10%;
+    display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+    position:fixed;
+	bottom:10%;
 }
-#navigate button{border:none;}
 
-.container{width:40%;position:absolute;
-    top:21%;left:32%;margin: auto;display:flex;flex-direction: column;
-    flex-wrap: wrap; font-family: 'Raleway', sans-serif;
+#navigate button{
+	border:none;
 }
-.container a{text-decoration: none;color:black;}
 
+.container{
+	width:40%;
+	position:absolute;
+    top:21%;
+	left:32%;
+	margin: auto;
+	display:flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+	font-family: 'Raleway', sans-serif;
+}
+
+.container a{
+	text-decoration: none;
+	color:black;
+}
 
 .btn-juicy {
-	box-shadow: 5px 10px#a117a1;
+	box-shadow: 5px 10px#CECEE4;
 	transition: 0.2s;
 }
+
 .btn-juicy:hover:active {
 	transition: 0.1s;
-	box-shadow: 1px 2px#a117a1;
+	box-shadow: 1px 2px#949CB8;
 	transform: translate(5px, 10px);
 }
+
 .btn-juicy:hover {
-	box-shadow: 6px 12px#a117a1;
+	box-shadow: 6px 12px#949CB8;
 	transform: translate(-1px, -2px);
 }
-#navigate .btn{border:2px solid white;color:white;
-font-weight: lighter;}
+
+#navigate .btn{
+	color:white;
+	letter-spacing: 5px;
+	padding-left: 20px;
+	font-weight: lighter;
+}
+
 .container .btn,.btn {
-	color: rgb(255, 255, 255);letter-spacing: 2px;
-	border-radius: 20px;font-size: 1.5rem;
-  border-color:2px aliceblue;font-weight: bold;
-	background-color: #f942f8;
+	color: white;
+	letter-spacing: 2px;
+	border-radius: 20px;
+	font-size: 1.5rem;
+	border-color:2px black;
+	font-weight: bold;
+	background-color: #3D3C72;
 	text-decoration: none;
-	padding:20px 10px;border:2px solid white;
-	margin: 10px;text-align: center;
+	padding:20px 10px;
+	border:2px solid #949CB8;
+	margin: 10px;
+	text-align: center;
 	user-select: none;
 	-webkit-user-drag: none;
-  font-size: 17px;
+	font-size: 17px;
 }
+
 @media only screen and (max-width:350px){
-   .container{left:15%;}
+   .container{
+		left:15%;
+	}
 }
+
 @media only screen and (max-width:1200px){
-    body{background-size: cover;}
+    body{
+		background-size: cover;
+	}
 }

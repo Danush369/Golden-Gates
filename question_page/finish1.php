@@ -10,7 +10,7 @@
     <title>Finished</title>
     <style>
         body{
-            background-image: url('../images/framegold.jpg');
+            background-image: url('../images/thank.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -20,7 +20,7 @@
         }
         h1{
             font-size: 60px;
-            margin:25% auto auto;
+            margin:30% auto auto;
             text-align: center;
             color: white;
         }
@@ -34,14 +34,14 @@
     <?php
     include("../dbconn/db.php");
     $name=$_COOKIE["name"];
-    $cname=$_COOKIE["cname"];
+    $dname=$_COOKIE["dname"];
     $email=$_COOKIE["email"];
     $marks=$_COOKIE["marks"];
-    echo "<p> name=$name email=$email cname=$cname marks=$marks </p>";
-    $sql = "INSERT INTO  student_r1 (`S_Name`, `E_id`, `C_Name`, `R1_Marks`) VALUES ('$name', '$email', '$cname','$marks')";
+    
+    $sql = "INSERT INTO  student_r1 (`S_Name`, `E_id`, `C_Name`, `R1_Marks`) VALUES ('$name', '$email', '$dname','$marks')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "<p>New record created successfully</p>";
+
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }

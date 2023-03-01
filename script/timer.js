@@ -1,6 +1,6 @@
 const timer=document.getElementById('timer');
-j=04;
-i=00;
+j=59;
+i=19;
 me()
 function me(){
    if(j==0 && i==0){

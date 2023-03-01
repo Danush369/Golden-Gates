@@ -54,7 +54,7 @@ include("../dbconn/fdata1.php");
       <?php
       $name = $_GET['name'];  
       $email =$_GET['email'];
-      $college = $_GET['college'];  
+      $Department = $_GET['Department'];  
       echo "
       <div class='avatar-container'>
         <div class='avatar'>
@@ -63,7 +63,7 @@ include("../dbconn/fdata1.php");
         <div class='name-box'><b>
           <p class='avatar-name' id='pname'>$name</p></b>"."
           <div id='email' class='avatar-email'>$email</div>
-          <div id='cname' class='avatar-college'>$college</div>
+          <div id='dname' class='avatar-Department'>$Department</div>
         </div>
       </div>";
       ?>  
@@ -106,7 +106,7 @@ include("../dbconn/fdata1.php");
      </div>
      
   </div>
-  <div id='rnd_name'>Brain Stormers</div>
+  <div id='rnd_name'>Lingua Franca</div>
   <div id="timer"></div>
   <button class="submit" id="submit" onclick="showModal()">Submit</button>
   <script src="../script/timer.js"></script>

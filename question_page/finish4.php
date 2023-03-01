@@ -10,7 +10,7 @@
     <title>Finished</title>
     <style>
         body{
-            background-image: url('../images/ty.jpg');
+            background-image: url('../images/thank.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -34,14 +34,14 @@
     <?php
     include("../dbconn/db.php");
     $name=$_COOKIE["name"];
-    $cname=$_COOKIE["cname"];
+    $dname=$_COOKIE["dname"];
     $email=$_COOKIE["email"];
     $marks=$_COOKIE["marks"];
-    echo "<p> name=$name email=$email cname=$cname marks=$marks </p>";
-    $sql = "INSERT INTO  student_r4 (`S_Name`, `E_id`, `C_Name`, `R4_Marks`) VALUES ('$name', '$email', '$cname','$marks')";
+    
+    $sql = "INSERT INTO  student_r4 (`S_Name`, `E_id`, `C_Name`, `R4_Marks`) VALUES ('$name', '$email', '$dname','$marks')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "<p>New record created successfully</p>";
+ 
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }

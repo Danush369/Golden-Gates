@@ -54,16 +54,16 @@ include("../dbconn/fdata3.php");
       <?php
       $name = $_GET['name'];  
       $email =$_GET['email'];
-      $college = $_GET['college'];  
+      $Department = $_GET['Department'];  
       echo "
       <div class='avatar-container'>
         <div class='avatar'>
-          <img src='../images/avatar.png' alt='Profile'>
+          <img src='../images/avatar.jpg' alt='Profile'>
         </div>
         <div class='name-box'><b>
           <p class='avatar-name' id='pname'>$name</p></b>"."
           <div id='email' class='avatar-email'>$email</div>
-          <div id='cname' class='avatar-college'>$college</div>
+          <div id='dname' class='avatar-Department'>$Department</div>
         </div>
       </div>";
       ?>  
@@ -106,7 +106,7 @@ include("../dbconn/fdata3.php");
      
   </div>
   <div id="timer"></div>
-  <div id='rnd_name'>Adventors</div>
+  <div id='rnd_name'>Media Maniacs</div>
   <button class="submit" id="submit" onclick="showModal()">Submit</button>
   <script src="../script/index.js"></script>
   <script src="../script/check3.js"></script>

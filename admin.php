@@ -10,7 +10,7 @@
 </head>
 <body>
   
-
+<a href="#r1b" class="toup"></a>
 <?php
 include("dbconn/db.php");
 
@@ -46,17 +46,17 @@ if($result== true){
 return $msg;
 }
 ?>
-<button ><a href="#r1" style="text-decoration: none";>Round 1</a></button>
+<button id="r1b"><a href="#r1" style="text-decoration: none";>Round 1</a></button>
 <button ><a href="#r2" style="text-decoration: none";>Round 2</a></button>
 <button ><a href="#r3" style="text-decoration: none";>Round 3</a></button>
 <button ><a href="#r4" style="text-decoration: none";>Round 4</a></button>
-<h1 id='r1'>Brain Stormers</h1>
+<h1 id='r1'>Lingua Franca</h1>
       <table class="rwd-table" border="1">
        <thead><tr><th>S.N</th>
 
          <th>Name</th>
          <th>Email</th>
-         <th>Collage Name</th>
+         <th>Department Name</th>
          <th>Marks</th>
     </thead>
     <tbody>
@@ -122,13 +122,13 @@ function fetch_data1($db, $tableName, $columns){
 
 ?>
 
-<h1 id='r2'>Ode on Codes</h1>
+<h1 id='r2'>Quiz Wiz</h1>
       <table class="rwd-table">
        <thead>
         <tr><th>S.N</th>
          <th>Name</th>
          <th>Email</th>
-         <th>Collage Name</th>
+         <th>Department Name</th>
          <th>Marks</th>
     </thead>
     <tbody>
@@ -192,13 +192,13 @@ function fetch_data2($db, $tableName, $columns){
  }
 ?>
 
-<h1 id='r3'>Adventors</h1>
+<h1 id='r3'>Media Maniacs</h1>
       <table class="rwd-table" border="1">
        <thead><tr><th>S.N</th>
 
          <th>Name</th>
          <th>Email</th>
-         <th>Collage Name</th>
+         <th>Department Name</th>
          <th>Marks</th>
     </thead>
     <tbody>
@@ -262,13 +262,13 @@ function fetch_data3($db, $tableName, $columns){
  return $msg;
  }
 ?>
-<h1 id='r4'>Lexicographers</h1>
+<h1 id='r4'>Connexion</h1>
       <table class="rwd-table" border="1">
        <thead><tr><th>S.N</th>
 
          <th>Name</th>
          <th>Email</th>
-         <th>Collage Name</th>
+         <th>Department Name</th>
          <th>Marks</th>
     </thead>
     <tbody>
